@@ -1,0 +1,65 @@
+.card {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 立體效果 */
+    /* transition: all 0.3s ease-in-out; */
+    width: 170px;
+    height: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 平滑過渡 */
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 鼠標懸停效果 */
+    transform: translateY(-10px); /* 浮起效果 */
+    color: #06b6d4; /* 文字顏色 */
+  }
+  
+  .card-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+  }
+  
+  .card-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+   .card-link {
+    color: inherit;  
+    text-decoration: none; 
+  } 
+  
+  .card-link:visited {
+    color: inherit;  
+  }
+  .info-card {
+    position: absolute;
+    z-index: 50;
+    /* border: 1px solid #ccc; */
+    /* background-color: whitesmoke; */
+  }
+  .info-card-content{
+    position: relative;
+    background-color: whitesmoke;
+    border: 1px groove #ccc;
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    top: 10px;
+    left: 50px;
+    width: 350px;
+    height: auto;
+  }
+  @media (max-width: 800px) {
+    .info-card-content {
+      left: -70px;
+    }
+  }
+  .inword {
+    padding: 10px;
+    margin: 10px;
+  }
